@@ -120,6 +120,11 @@
   "resolved" "https://registry.npmjs.org/@types/semver/-/semver-7.3.13.tgz"
   "version" "7.3.13"
 
+"@types/webfontloader@^1.6.35":
+  "integrity" "sha512-IJlrsiDWq6KghQ7tPlL5tcwSUyOxLDceT+AFUY7Ylj0Fcv3/h3QkANqQxZ0B5mEpEKxhTw76vDmvrruSMV9n9Q=="
+  "resolved" "https://registry.npmjs.org/@types/webfontloader/-/webfontloader-1.6.35.tgz"
+  "version" "1.6.35"
+
 "@typescript-eslint/eslint-plugin@^5.0.0":
   "integrity" "sha512-itag0qpN6q2UMM6Xgk6xoHa0D0/P+M17THnr4SVgqn9Rgam5k/He33MA7/D7QoJcdMxHFyX7U9imaBonAX/6qA=="
   "resolved" "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.57.0.tgz"
