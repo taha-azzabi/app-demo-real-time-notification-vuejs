@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 // Types
-import type { Ref } from 'vue'
-import type { HubConnection } from '@microsoft/signalr'
+/*import type { Ref } from 'vue'
+import type { HubConnection } from '@microsoft/signalr'*/
 
 // Utils
 import Badger from '@/utils/Badger'
@@ -20,11 +20,7 @@ import SnackbarBase from '@/components/SnackbarBase.vue'
 // In this example, it is set to 'taha-id-01' to identify the user as "Taha" (Me).
 const USER_ID = import.meta.env.VITE_USER_ID
 
-const signalR = ref<null | {
-  connection: Ref<HubConnection | null>
-  on: (eventName: string, callback: any) => void
-  off: (eventName: string, callback: any) => void
-}>(null)
+const signalR = ref<null | any>(null)
 
 // The countMessages variable is used to keep track of the number of messages received.
 const countMessages = ref(0)

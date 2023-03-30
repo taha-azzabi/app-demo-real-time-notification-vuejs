@@ -10,7 +10,7 @@ export default async function useSignalR(userId: string) {
     }
   })
 
-  const on = (eventName: string, callback) => {
+  const on = (eventName: string, callback: (...args: any[]) => any) => {
     watchEffect(() => {
       if (connection.value) {
         connection.value.on(eventName, callback)
@@ -18,7 +18,7 @@ export default async function useSignalR(userId: string) {
     })
   }
 
-  const off = (eventName: string, callback) => {
+  const off = (eventName: string, callback: (...args: any[]) => void) => {
     watchEffect(() => {
       if (connection.value) {
         connection.value.off(eventName, callback)

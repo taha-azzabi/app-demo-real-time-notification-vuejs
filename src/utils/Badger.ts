@@ -11,6 +11,7 @@ class Badger {
   private faviconSize: number
 
   constructor(private options: BadgerOptions) {
+    this.faviconSize = 0;
     this.faviconEL = document.querySelector("link[rel$='icon']") as HTMLLinkElement
     this.src = this.faviconEL.getAttribute('href') || ''
     this.canvas = document.createElement('canvas')
