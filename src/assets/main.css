@@ -1,0 +1,14 @@
+@import './base.css';
+
+.box-shadow-base {
+  box-shadow: 0 0 50px -12px rgb(214 175 161 / 30%);
+}
+.gradient-grey {
+  background: radial-gradient(circle at bottom left, #edf2f5 0%, #707274 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.transform-none {
+  text-transform: none;
+}
